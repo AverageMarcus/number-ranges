@@ -1,0 +1,28 @@
+{
+  "name": "@averagemarcus/number-ranges",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Handle converting a range of numbers between arrays and string",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "build": "npx tsc -p . && rollup -c",
+    "pretest": "npm run -s build",
+    "test": "ava --verbose test.js",
+    "prepublish": "npm run -s build"
+  },
+  "keywords": [],
+  "author": "Marcus Noble",
+  "repository": "averagemarcus/number-ranges",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "rollup": "^0.66.4",
+    "rollup-plugin-commonjs": "^9.1.8",
+    "rollup-plugin-uglify": "^6.0.0",
+    "typescript": "^3.1.1"
+  }
+}

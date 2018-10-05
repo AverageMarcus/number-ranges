@@ -1,0 +1,5 @@
+*.ts
+!*.js
+!*.d.ts
+tsconfig.json
+!dist/*.*
