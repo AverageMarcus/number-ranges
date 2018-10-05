@@ -6,7 +6,7 @@ export default [
 	{
 		input: 'index.js',
 		output: {
-			name: 'number-ranges',
+			name: 'numberRanges',
 			file: pkg.browser,
 			format: 'umd'
 		},
